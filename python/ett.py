@@ -1,5 +1,4 @@
 import requests
-import json
 
 def get(name):
     c = requests.get('https://tikolu.net/edit/.text/' + name).text
