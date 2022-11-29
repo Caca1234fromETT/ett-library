@@ -35,6 +35,6 @@ class Virtual {
     }
     async post(page, content) {
         await this.sleep(content.length / this.speed);
-        this.data[page] = content;
+        this.pages[page] = content;
     }
 }
