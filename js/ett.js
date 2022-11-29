@@ -23,13 +23,13 @@ class Virtual {
             content = ett.get(page);
             this.pages[page] = content;
 	        
-            await sleep(content.length * this.speed);
+            await sleep(content.length / this.speed);
 	        
             return content;
         }
         content = this.pages[page];
 	    
-        await sleep(content.length * this.speed);
+        await sleep(content.length / this.speed);
 	    
         return content;
     }
