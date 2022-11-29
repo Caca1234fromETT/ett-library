@@ -23,18 +23,18 @@ class Virtual {
             var content = ett.get(page);
             this.pages[page] = content;
 	        
-            await sleep(content.length / this.speed);
+            await this.sleep(content.length / this.speed);
 	        
             return content;
         }
         var content = this.pages[page];
 	    
-        await sleep(content.length / this.speed);
+        await this.sleep(content.length / this.speed);
 	    
         return content;
     }
     async post(page, content) {
-        await sleep(content.length / this.speed);
+        await this.sleep(content.length / this.speed);
         this.data[page] = content;
     }
 }
