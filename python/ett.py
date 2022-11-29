@@ -7,7 +7,7 @@ def get(name):
 def post(name, content):
     values = {
         'content': content,
-        'timestamp': None,
+        'timestamp': '0',
         'ignoreconflict': True,
     }
     c = requests.post('https://tikolu.net/edit/' + name, json = values)
